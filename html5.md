@@ -347,3 +347,123 @@ Open Graph tags are used to control how URLs are displayed when shared on social
 ```
 
 ![image explaining meta tags](https://raw.githubusercontent.com/hanshal18/cheatsheets/main/Screenshot%202024-08-10%20at%2018.03.50.png)
+
+
+
+
+
+
+1. Document Metadata
+```<html>```: Root element of an HTML document.
+```<head>```: Contains metadata and links to resources like stylesheets and scripts.
+```<title>```: Defines the title of the document (displayed in the browser's title bar or tab).
+```<meta>```: Provides metadata about the document (e.g., charset, viewport settings).
+```<link>```: Links to external resources (e.g., stylesheets).
+```<style>```: Contains internal CSS styles.
+```<base>```: Specifies a base URL for relative URLs.
+
+2. Sections and Grouping
+```<body>```: Contains the content of the document.
+```<header>```: Represents introductory content or navigational links.
+```<nav>```: Defines navigation links.
+```<main>```: Specifies the main content of the document.
+```<section>```: Defines a section in the document.
+```<article>```: Represents a self-contained piece of content.
+```<aside>```: Contains content indirectly related to the main content.
+```<footer>```: Defines the footer for a section or the entire document.
+```<h1>, <h2>, <h3>, <h4>, <h5>, <h6>```: Define headings, with ````<h1>``` being the highest level and ```<h6> ```the lowest.
+```<p>```: Defines a paragraph.
+```<hr>```: Creates a horizontal rule (line).
+```<pre>```: Displays preformatted text.
+
+3. Text Content
+```<a>```: Defines a hyperlink.
+```<strong>```: Indicates strong importance (typically bold text).
+```<em>```: Indicates emphasized text (typically italicized).
+```<small>```: Defines smaller text.
+```<s>```: Represents text that is no longer accurate or relevant (strikethrough).
+```<cite>```: Represents the title of a work.
+```<q>```: Defines a short inline quotation.
+```<blockquote>```: Defines a long quotation.
+```<code>```: Represents a single line of code.
+```<samp>```: Represents sample output from a computer program.
+```<kbd>```: Represents user input (typically keyboard input).
+```<var>```: Represents a variable in a mathematical expression or programming context.
+```<abbr>```: Defines an abbreviation or acronym.
+```<b>```: Represents bold text (not semantically important).
+```<i>```: Represents italic text (not semantically important).
+```<mark>```: Highlights text.
+```<ruby>```: Defines a ruby annotation (used for pronunciation).
+```<rt>```: Defines the pronunciation of characters in a ruby annotation.
+```<rp>```: Defines what to show in browsers that do not support ruby annotations.
+```<bdi>```: Isolates a span of text that might be formatted in a different direction from the surrounding text.
+```<bdo>```: Overrides the current text direction.
+
+4. Lists
+```<ul>```: Defines an unordered list.
+```<ol>```: Defines an ordered list.
+```<li>```: Defines a list item.
+```<dl>```: Defines a description list.
+```<dt>```: Defines a term in a description list.
+```<dd>```: Defines a description in a description list.
+
+5. Links and Anchors
+```<a>```: Defines a hyperlink.
+
+6. Forms
+```<form>```: Defines an HTML form for user input.
+```<input>```: Defines an input control.
+```<textarea>```: Defines a multiline text input control.
+```<button>```: Defines a clickable button.
+```<select>```: Defines a drop-down list.
+```<option>```: Defines options in a drop-down list.
+```<optgroup>```: Groups related options in a drop-down list.
+```<label>```: Defines a label for an ```<input>``` element.
+```<fieldset>```: Groups related elements in a form.
+```<legend>```: Defines a caption for a ```<fieldset>``` element.
+```<datalist>```: Contains a list of predefined options for an ```<input>``` element.
+```<output>```: Represents the result of a calculation or user action.
+
+7. Tables
+```<table>```: Defines a table.
+```<caption>```: Defines a caption for a table.
+```<thead>```: Groups the header content in a table.
+```<tbody>```: Groups the body content in a table.
+```<tfoot>```: Groups the footer content in a table.
+```<tr>```: Defines a row in a table.
+```<td>```: Defines a cell in a table row.
+```<th>```: Defines a header cell in a table.
+
+8. Embedded Content
+```<img>```: Embeds an image.
+```<iframe>```: Embeds another HTML document within the current document.
+```<embed>```: Embeds external content (e.g., multimedia).
+```<object>```: Defines an embedded object (e.g., multimedia, documents).
+```<param>```: Defines parameters for an ```<object>``` element.
+```<video>```: Embeds a video player.
+```<audio>```: Embeds an audio player.
+```<source>```: Specifies multiple media resources for ```<video>``` and ```<audio>```.
+```<track>```: Provides text tracks for ```<video>``` and ```<audio>``` elements.
+
+9. Scripts and Interactivity
+```<script>```: Defines client-side JavaScript.
+```<noscript>```: Defines alternative content for browsers that do not support scripting.
+
+10. Inline Frames
+```<iframe>```: Defines an inline frame (used to embed another document).
+
+11. Web Components
+```<template>```: Defines a template that can be instantiated later.
+```<slot>```: Defines a placeholder inside a ```<template>``` for content distribution.
+
+12. Miscellaneous
+```<canvas>```: Defines a drawing area for graphics (used with JavaScript).
+```<svg>```: Defines scalable vector graphics.
+```<math>```: Embeds mathematical expressions (part of MathML).
+
+## Deprecated Tags (Not Recommended)
+```<font>```: Specifies font size, color, and face (use CSS instead).
+```<center>```: Centers content (use CSS instead).
+```<big>```: Increases text size (use CSS instead).
+```<blink>```: Makes text blink (not supported in modern browsers). 
+
