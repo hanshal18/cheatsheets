@@ -228,6 +228,16 @@ The ```<textarea>``` tag is used for multi-line text input. It allows users to e
 ```<span>```: An inline element used for styling parts of text.
 ```<p>This is <span style="color: red;">important</span> text.</p>```
 
+### 8. Page Footer
+The ```<footer>``` tag can be used to define the footer for the entire webpage.
+
+```
+<footer>
+    <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+    <p><a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-of-service">Terms of Service</a></p>
+</footer>
+```
+
 # META TAGS, for search engine optimization
 
 ### 1. Character Set
