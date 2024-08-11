@@ -353,268 +353,401 @@ Open Graph tags are used to control how URLs are displayed when shared on social
 
 
 
-1. Document Metadata
-```<html>```: Root element of an HTML document.
-```<head>```: Contains metadata and links to resources like stylesheets and scripts.
-```<title>```: Defines the title of the document (displayed in the browser's title bar or tab).
-```<meta>```: Provides metadata about the document (e.g., charset, viewport settings).
-```<link>```: Links to external resources (e.g., stylesheets).
-```<style>```: Contains internal CSS styles.
-```<base>```: Specifies a base URL for relative URLs.
-
-2. Sections and Grouping
-```<body>```: Contains the content of the document.
-```<header>```: Represents introductory content or navigational links.
-```<nav>```: Defines navigation links.
-```<main>```: Specifies the main content of the document.
-```<section>```: Defines a section in the document.
-```<article>```: Represents a self-contained piece of content.
-```<aside>```: Contains content indirectly related to the main content.
-```<footer>```: Defines the footer for a section or the entire document.
-```<h1>, <h2>, <h3>, <h4>, <h5>, <h6>```: Define headings, with ````<h1>``` being the highest level and ```<h6> ```the lowest.
-```<p>```: Defines a paragraph.
-```<hr>```: Creates a horizontal rule (line).
-```<pre>```: Displays preformatted text.
-
-3. Text Content
-```<a>```: Defines a hyperlink.
-```<strong>```: Indicates strong importance (typically bold text).
-```<em>```: Indicates emphasized text (typically italicized).
-```<small>```: Defines smaller text.
-```<s>```: Represents text that is no longer accurate or relevant (strikethrough).
-```<cite>```: Represents the title of a work.
-```<q>```: Defines a short inline quotation.
-```<blockquote>```: Defines a long quotation.
-```<code>```: Represents a single line of code.
-```<samp>```: Represents sample output from a computer program.
-```<kbd>```: Represents user input (typically keyboard input).
-```<var>```: Represents a variable in a mathematical expression or programming context.
-```<abbr>```: Defines an abbreviation or acronym.
-```<b>```: Represents bold text (not semantically important).
-```<i>```: Represents italic text (not semantically important).
-```<mark>```: Highlights text.
-```<ruby>```: Defines a ruby annotation (used for pronunciation).
-```<rt>```: Defines the pronunciation of characters in a ruby annotation.
-```<rp>```: Defines what to show in browsers that do not support ruby annotations.
-```<bdi>```: Isolates a span of text that might be formatted in a different direction from the surrounding text.
-```<bdo>```: Overrides the current text direction.
-
-4. Lists
-```<ul>```: Defines an unordered list.
-```<ol>```: Defines an ordered list.
-```<li>```: Defines a list item.
-```<dl>```: Defines a description list.
-```<dt>```: Defines a term in a description list.
-```<dd>```: Defines a description in a description list.
-
-5. Links and Anchors
-```<a>```: Defines a hyperlink.
-
-6. Forms
-```<form>```: Defines an HTML form for user input.
-```<input>```: Defines an input control.
-```<textarea>```: Defines a multiline text input control.
-```<button>```: Defines a clickable button.
-```<select>```: Defines a drop-down list.
-```<option>```: Defines options in a drop-down list.
-```<optgroup>```: Groups related options in a drop-down list.
-```<label>```: Defines a label for an ```<input>``` element.
-```<fieldset>```: Groups related elements in a form.
-```<legend>```: Defines a caption for a ```<fieldset>``` element.
-```<datalist>```: Contains a list of predefined options for an ```<input>``` element.
-```<output>```: Represents the result of a calculation or user action.
-
-7. Tables
-```<table>```: Defines a table.
-```<caption>```: Defines a caption for a table.
-```<thead>```: Groups the header content in a table.
-```<tbody>```: Groups the body content in a table.
-```<tfoot>```: Groups the footer content in a table.
-```<tr>```: Defines a row in a table.
-```<td>```: Defines a cell in a table row.
-```<th>```: Defines a header cell in a table.
-
-8. Embedded Content
-```<img>```: Embeds an image.
-```<iframe>```: Embeds another HTML document within the current document.
-```<embed>```: Embeds external content (e.g., multimedia).
-```<object>```: Defines an embedded object (e.g., multimedia, documents).
-```<param>```: Defines parameters for an ```<object>``` element.
-```<video>```: Embeds a video player.
-```<audio>```: Embeds an audio player.
-```<source>```: Specifies multiple media resources for ```<video>``` and ```<audio>```.
-```<track>```: Provides text tracks for ```<video>``` and ```<audio>``` elements.
-
-9. Scripts and Interactivity
-```<script>```: Defines client-side JavaScript.
-```<noscript>```: Defines alternative content for browsers that do not support scripting.
-
-10. Inline Frames
-```<iframe>```: Defines an inline frame (used to embed another document).
-
-11. Web Components
-```<template>```: Defines a template that can be instantiated later.
-```<slot>```: Defines a placeholder inside a ```<template>``` for content distribution.
-
-12. Miscellaneous
-```<canvas>```: Defines a drawing area for graphics (used with JavaScript).
-```<svg>```: Defines scalable vector graphics.
-```<math>```: Embeds mathematical expressions (part of MathML).
-
-## Deprecated Tags (Not Recommended)
-```<font>```: Specifies font size, color, and face (use CSS instead).
-```<center>```: Centers content (use CSS instead).
-```<big>```: Increases text size (use CSS instead).
-```<blink>```: Makes text blink (not supported in modern browsers). 
-
-
 
 
 # Structural Elements
-```<html>```:``` <html lang="en">```
-```<head>```:``` <head><meta charset="UTF-8"></head>```
-```<title>```:``` <title>My Page Title</title>```
-```<body>```:``` <body><h1>Welcome!</h1></body>```
-```<header>```:``` <header><h1>Site Header</h1></header>```
-```<footer>```:``` <footer><p>Footer Content</p></footer>```
-```<main>```:``` <main><h2>Main Section</h2></main>```
-```<section>```:``` <section><h2>About Us</h2></section>```
-```<article>```:``` <article><h2>Article Title</h2></article>```
-```<aside>```:``` <aside><p>Related Links</p></aside>```
-```<nav>```:``` <nav><a href="#home">Home</a></nav>```
-```<h1>```:``` <h1>Main Title</h1>```
-```<h2>```:``` <h2>Subheading</h2>```
-```<h3>```:``` <h3>Third Level Heading</h3>```
-```<h4>```:``` <h4>Fourth Level Heading</h4>```
-```<h5>```:``` <h5>Fifth Level Heading</h5>```
-```<h6>```:``` <h6>Sixth Level Heading</h6>```
-```<div>```:``` <div class="container">Content</div>```
+```
+<html lang="en">
+```
+```
+<head><meta charset="UTF-8"></head>
+```
+```
+<title>My Page Title</title>
+```
+```
+<body><h1>Welcome!</h1></body>
+```
+```
+<header><h1>Site Header</h1></header>
+```
+```
+<footer><p>Footer Content</p></footer>
+```
+```
+<main><h2>Main Section</h2></main>
+```
+```
+<section><h2>About Us</h2></section>
+```
+```
+<article><h2>Article Title</h2></article>
+```
+```
+<aside><p>Related Links</p></aside>
+```
+```
+<nav><a href="#home">Home</a></nav>
+```
+```
+<h1>Main Title</h1>
+```
+```
+<h2>Subheading</h2>
+```
+```
+<h3>Third Level Heading</h3>
+```
+```
+<h4>Fourth Level Heading</h4>
+```
+```
+<h5>Fifth Level Heading</h5>
+```
+```
+<h6>Sixth Level Heading</h6>
+```
+```
+<div class="container">Content</div>
+```
 
 # Text Content
-```<p>```:``` <p>This is a paragraph.</p>```
-```<hr>```:``` <hr>```
-```<pre>```:``` <pre>Preformatted text</pre>```
-```<blockquote>```:``` <blockquote cite="source">Quoted text</blockquote>```
-```<ol>```:``` <ol><li>First Item</li></ol>```
-```<ul>```:``` <ul><li>Item One</li></ul>```
-```<li>```:``` <li>List Item</li>```
-```<dl>```:``` <dl><dt>Term</dt><dd>Definition</dd></dl>```
-```<dt>```:``` <dt>Term</dt>```
-```<dd>```:``` <dd>Description</dd>```
-```<figure>```:``` <figure><img src="image.jpg"><figcaption>Caption</figcaption></figure>```
-```<figcaption>```:``` <figcaption>Image Caption</figcaption>```
-```<main>```:``` <main><h2>Main Content</h2></main>```
-```<address>```:``` <address>Contact us at info@example.com</address>```
-```<small>```:``` <small>Small text</small>```
-```<strong>```:``` <strong>Important text</strong>```
-```<b>```:``` <b>Bold text</b>```
-```<em>```:``` <em>Emphasized text</em>```
-```<i>```:``` <i>Italic text</i>```
-```<mark>```:``` <mark>Highlighted text</mark>```
-```<del>```:``` <del>Deleted text</del>```
-```<ins>```:``` <ins>Inserted text</ins>```
-```<sub>```:``` <sub>Subscript text</sub>```
-```<sup>```:``` <sup>Superscript text</sup>```
-```<span>```:``` <span class="highlight">Inline text</span>```
-```<time>```:``` <time datetime="2024-08-11">August 11, 2024</time>```
-```<code>```:``` <code>console.log('Hello, World!');</code>```
-```<var>```:``` <var>x = 5</var>```
-```<samp>```:``` <samp>Sample output</samp>```
-```<kbd>```:``` <kbd>Ctrl + C</kbd>```
-```<cite>```:``` <cite>Title of a Work</cite>```
-```<q>```:``` <q>Quoted text.</q>```
-```<abbr>```:``` <abbr title="Hypertext Markup Language">HTML</abbr>```
-```<data>```:``` <data value="2024-08-11">August 11, 2024</data>```
-```<bdi>```:``` <bdi>Some text</bdi>```
-```<bdo>```:``` <bdo dir="rtl">Right to left text</bdo>```
-```<ruby>```:``` <ruby>漢<rt>kan</rt></ruby>```
-```<rt>```:``` <rt>Pronunciation</rt>```
-```<rp>```:``` <rp>(</rp><ruby>漢<rt>kan</rt></ruby><rp>)</rp>```
-```<bdi>```:``` <bdi>Text to be isolated</bdi>```
-```<bdo>```:``` <bdo dir="rtl">Text in right-to-left direction</bdo>```
+```
+<p>This is a paragraph.</p>
+```
+```
+<hr>
+```
+```
+<pre>Preformatted text</pre>
+```
+```
+<blockquote cite="source">Quoted text</blockquote>
+```
+```
+<ol><li>First Item</li></ol>
+```
+```
+<ul><li>Item One</li></ul>
+```
+```
+<li>List Item</li>
+```
+```
+<dl><dt>Term</dt><dd>Definition</dd></dl>
+```
+```
+<dt>Term</dt>
+```
+```
+<dd>Description</dd>
+```
+```
+<figure><img src="image.jpg"><figcaption>Caption</figcaption></figure>
+```
+```
+<figcaption>Image Caption</figcaption>
+```
+```
+<main><h2>Main Content</h2></main>
+```
+```
+<address>Contact us at info@example.com</address>
+```
+```
+<small>Small text</small>
+```
+```
+<strong>Important text</strong>
+```
+```
+<b>Bold text</b>
+```
+```
+<em>Emphasized text</em>
+```
+```
+<i>Italic text</i>
+```
+```
+<mark>Highlighted text</mark>
+```
+```
+<del>Deleted text</del>
+```
+```
+<ins>Inserted text</ins>
+```
+```
+<sub>Subscript text</sub>
+```
+```
+<sup>Superscript text</sup>
+```
+```
+<span class="highlight">Inline text</span>
+```
+```
+<time datetime="2024-08-11">August 11, 2024</time>
+```
+```
+<code>console.log('Hello, World!');</code>
+```
+```
+<var>x = 5</var>
+```
+```
+<samp>Sample output</samp>
+```
+```
+<kbd>Ctrl + C</kbd>
+```
+```
+<cite>Title of a Work</cite>
+```
+```
+<q>Quoted text.</q>
+```
+```
+<abbr title="Hypertext Markup Language">HTML</abbr>
+```
+```
+<data value="2024-08-11">August 11, 2024</data>
+```
+```
+<bdi>Some text</bdi>
+```
+```
+<bdo dir="rtl">Right to left text</bdo>
+```
+```
+<ruby>漢<rt>kan</rt></ruby>
+```
+```
+<rt>Pronunciation</rt>
+```
+```
+<rp>(</rp><ruby>漢<rt>kan</rt></ruby><rp>)</rp>
+```
+```
+<bdi>Text to be isolated</bdi>
+```
+```
+<bdo dir="rtl">Text in right-to-left direction</bdo>
+```
 
 # Embedded Content
-```<img>```:``` <img src="image.jpg" alt="Image description">```
-```<audio>```:``` <audio controls><source src="audio.mp3" type="audio/mpeg">Your browser does not support audio.</audio>```
-```<video>```:``` <video controls><source src="video.mp4" type="video/mp4">Your browser does not support video.</video>```
-```<source>```:``` <source src="video.mp4" type="video/mp4">```
-```<track>```:``` <track kind="subtitles" src="subtitles_en.vtt" srclang="en" label="English">```
-```<iframe>```:``` <iframe src="https://example.com"></iframe>```
-```<embed>```:``` <embed src="file.pdf" width="600" height="500">```
-```<object>```:``` <object data="movie.mp4" type="video/mp4"></object>```
-```<param>```:``` <param name="autoplay" value="true">```
-```<canvas>```:``` <canvas id="myCanvas" width="200" height="100"></canvas>```
-```<svg>```:``` <svg width="100" height="100"><circle cx="50" cy="50" r="40" fill="red" /></svg>```
-```<math>```:``` <math><msup><mi>x</mi><mn>2</mn></msup></math>```
+```
+<img src="image.jpg" alt="Image description">
+```
+```
+<audio controls><source src="audio.mp3" type="audio/mpeg">Your browser does not support audio.</audio>
+```
+```
+<video controls><source src="video.mp4" type="video/mp4">Your browser does not support video.</video>
+```
+```
+<source src="video.mp4" type="video/mp4">
+```
+```
+<track kind="subtitles" src="subtitles_en.vtt" srclang="en" label="English">
+```
+```
+<iframe src="https://example.com"></iframe>
+```
+```
+<embed src="file.pdf" width="600" height="500">
+```
+```
+<object data="movie.mp4" type="video/mp4"></object>
+```
+```
+<param name="autoplay" value="true">
+```
+```
+<canvas id="myCanvas" width="200" height="100"></canvas>
+```
+```
+<svg width="100" height="100"><circle cx="50" cy="50" r="40" fill="red" /></svg>
+```
+```
+<math><msup><mi>x</mi><mn>2</mn></msup></math>
+```
 
 # Interactive Elements
-```<a>```:``` <a href="https://example.com">Visit Example</a>```
-```<button>```:``` <button>Click Me</button>```
-```<details>```:``` <details><summary>More Info</summary><p>Details content.</p></details>```
-```<dialog>```:``` <dialog open><p>Dialog content.</p><button>Close</button></dialog>```
-```<input>```:``` <input type="text" placeholder="Enter text">```
-```<select>```:``` <select><option value="1">Option 1</option></select>```
-```<datalist>```:``` <input list="browsers"><datalist id="browsers"><option value="Chrome"><option value="Firefox"></datalist>```
-```<textarea>```:``` <textarea rows="4" cols="50">Enter text here...</textarea>```
-```<label>```:``` <label for="input">Input Label</label>```
-```<fieldset>```:``` <fieldset><legend>Legend</legend><input type="text"></fieldset>```
-```<legend>```:``` <legend>Form Legend</legend>```
-```<progress>```:``` <progress value="70" max="100">70%</progress>```
-```<meter>```:``` <meter value="0.6">60%</meter>```
-```<output>```:``` <output name="result" for="a b">Result</output>```
-```<summary>```:``` <summary>Click to expand</summary>```
+```
+<a href="https://example.com">Visit Example</a>
+```
+```
+<button>Click Me</button>
+```
+```
+<details><summary>More Info</summary><p>Details content.</p></details>
+```
+```
+<dialog open><p>Dialog content.</p><button>Close</button></dialog>
+```
+```
+<input type="text" placeholder="Enter text">
+```
+```
+<select><option value="1">Option 1</option></select>
+```
+```
+<input list="browsers"><datalist id="browsers"><option value="Chrome"><option value="Firefox"></datalist>
+```
+```
+<textarea rows="4" cols="50">Enter text here...</textarea>
+```
+```
+<label for="input">Input Label</label>
+```
+```
+<fieldset><legend>Legend</legend><input type="text"></fieldset>
+```
+```
+<legend>Form Legend</legend>
+```
+```
+<progress value="70" max="100">70%</progress>
+```
+```
+<meter value="0.6">60%</meter>
+```
+```
+<output name="result" for="a b">Result</output>
+```
+```
+<summary>Click to expand</summary>
+```
 
 # Table Elements
-```<table>```:``` <table><tr><th>Header</th></tr></table>```
-```<caption>```:``` <caption>Table Title</caption>```
-```<thead>```:``` <thead><tr><th>Header</th></tr></thead>```
-```<tbody>```:``` <tbody><tr><td>Row 1</td></tr></tbody>```
-```<tfoot>```:``` <tfoot><tr><td>Footer</td></tr></tfoot>```
-```<tr>```:``` <tr><td>Table Row</td></tr>```
-```<th>```:``` <th>Table Header</th>```
-```<td>```:``` <td>Table Data</td>```
-```<col>```:``` <col style="background-color:yellow">```
-```<colgroup>```:``` <colgroup><col span="2"></colgroup>```
+```
+<table><tr><th>Header</th></tr></table>
+```
+```
+<caption>Table Title</caption>
+```
+```
+<thead><tr><th>Header</th></tr></thead>
+```
+```
+<tbody><tr><td>Row 1</td></tr></tbody>
+```
+```
+<tfoot><tr><td>Footer</td></tr></tfoot>
+```
+```
+<tr><td>Table Row</td></tr>
+```
+```
+<th>Table Header</th>
+```
+```
+<td>Table Data</td>
+```
+```
+<col style="background-color:yellow">
+```
+```
+<colgroup><col span="2"></colgroup>
+```
 
 # Scripting Elements
-```<script>```:``` <script>console.log('Hello!');</script>```
-```<noscript>```:``` <noscript>Your browser does not support JavaScript.</noscript>```
-```<template>```:``` <template><p>This is a template.</p></template>```
-```<canvas>```:``` <canvas id="myCanvas" width="200" height="100"></canvas>```
+```
+<script>console.log('Hello!');</script>
+```
+```
+<noscript>Your browser does not support JavaScript.</noscript>
+```
+```
+<template><p>This is a template.</p></template>
+```
+```
+<canvas id="myCanvas" width="200" height="100"></canvas>
+```
 
 # Miscellaneous Elements
-```<link>```:``` <link rel="stylesheet" href="styles.css">```
-```<meta>```:``` <meta charset="UTF-8">```
-```<style>```:``` <style>body { font-family: Arial; }</style>```
-```<base>```:``` <base href="https://example.com/">```
-```<title>```:``` <title>Page Title</title>```
+```
+<link rel="stylesheet" href="styles.css">
+```
+```
+<meta charset="UTF-8">
+```
+```
+<style>body { font-family: Arial; }</style>
+```
+```
+<base href="https://example.com/">
+```
+```
+<title>Page Title</title>
+```
 
 # Deprecated or Obsolete Elements
-```<applet>```:``` <applet code="example.class" width="300" height="300"></applet>```
-```<basefont>```:``` <basefont size="5" color="red">```
-```<bgsound>```:``` <bgsound src="sound.mp3">```
-```<blink>```:``` <blink>This text blinks</blink>```
-```<iframe>```:``` <iframe src="https://example.com"></iframe>```
-```<marquee>```:``` <marquee>Scrolling Text</marquee>```
-```<font>```:``` <font color="red">Red Text</font>```
-```<center>```:``` <center>This is centered</center>```
-```<keygen>```:``` <keygen name="name">```
-```<nextid>```:``` <nextid>```
-```<nobr>```:``` <nobr>Do not break</nobr>```
-```<spacer>```:``` <spacer size="20">```
-```<strike>```:``` <strike>Strikethrough text</strike>```
-```<tt>```:``` <tt>Typewriter text</tt>```
+```
+<applet code="example.class" width="300" height="300"></applet>
+```
+```
+<basefont size="5" color="red">
+```
+```
+<bgsound src="sound.mp3">
+```
+```
+<blink>This text blinks</blink>
+```
+```
+<iframe src="https://example.com"></iframe>
+```
+```
+<marquee>Scrolling Text</marquee>
+```
+```
+<font color="red">Red Text</font>
+```
+```
+<center>This is centered</center>
+```
+```
+<keygen name="name">
+```
+```
+<nextid>
+```
+```
+<nobr>Do not break</nobr>
+```
+```
+<spacer size="20">
+```
+```
+<strike>Strikethrough text</strike>
+```
+```
+<tt>Typewriter text</tt>
+```
 
 # Global Attributes (available for all HTML elements)
-class:``` <div class="example">Content</div>```
-id:``` <p id="unique">Unique paragraph</p>```
+class:```<div class="example">Content</div>```
+
+id:```<p id="unique">Unique paragraph</p>```
+
 style:``` <span style="color: red;">Styled text</span>```
+
 title:``` <abbr title="Hypertext Markup Language">HTML</abbr>```
-data-```*: <div data-info="value">Data Attribute</div>```
-lang:``` <html lang="en">```
-tabindex:``` <button tabindex="1">Focusable Button</button>```
-hidden:``` <div hidden>This is hidden</div>```
-contenteditable:``` <div contenteditable="true">Editable content</div>```
-draggable:``` <div draggable="true">Drag me</div>```
-spellcheck:``` <input type="text" spellcheck="true">```
+
+data-*:```<div data-info="value">Data Attribute</div>```
+
+lang:```<html lang="en">```
+
+tabindex:```<button tabindex="1">Focusable Button</button>```
+
+hidden:```<div hidden>This is hidden</div>```
+
+contenteditable:```<div contenteditable="true">Editable content</div>```
+
+draggable:```<div draggable="true">Drag me</div>```
+
+spellcheck:```<input type="text" spellcheck="true">```
 
