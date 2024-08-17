@@ -28,13 +28,13 @@ var my_firstName = "John"; //✔️
 var _myLastName$ = "Doe";//✔️
 //? Explanation: This is a valid variable name. It starts with an underscore, and the subsequent characters include letters, numbers, and a dollar sign. Follows JavaScript naming rules.
 
-var 123myAge = 25; // ❌
+// var 123myAge = 25; // ❌
 //? Explanation: This is not a valid variable name. It starts with a number, which is not allowed as per JavaScript naming rules. Variable names cannot begin with a digit.
 
 var $cityName = "New York"; // ✔️
 //? Explanation: This is a valid variable name. It starts with a dollar sign, and the subsequent characters include letters. Follows JavaScript naming rules.
 
-var my@Email = "john@example.com"; // ❌
+// var my@Email = "john@example.com"; // ❌
 //? Explanation: This is not a valid variable name. It includes the special character '@', which is not allowed in JavaScript variable names. Only letters, numbers, underscores, and dollar signs are allowed.
 
 
@@ -87,18 +87,18 @@ const mySymbol = Symbol("description");
 //? parseInt and parseFloat are both functions in JavaScript used for converting strings to numbers, but they have different use cases.
 
 //* parseInt: Definition: parseInt is used to parse a string and convert it to an integer (whole number).
-const myString = "42";
-const myNumber = parseInt(myString);
-console.log(myNumber); // Output: 42
+const myString1 = "42";
+const myNumber1 = parseInt(myString1);
+console.log(myNumber1); // Output: 42
 
-const myString = "42.5";
-const myNumber = parseInt(myString);
-console.log(myNumber); // Output: 42
+const myString2 = "42.5";
+const myNumber2 = parseInt(myString2);
+console.log(myNumber2); // Output: 42
 
 //* parseFloat: Definition: parseFloat is used to parse a string and convert it to a floating-point number (decimal number).
-const myString = "42.5";
-const myNumber = parseFloat(myString);
-console.log(myNumber); // Output: 42.5
+const myString3 = "42.5";
+const myNumber3 = parseFloat(myString3);
+console.log(myNumber3); // Output: 42.5
 
 
 //? What is the purpose of the NaN value in JavaScript❓
@@ -127,8 +127,8 @@ if (NaN == NaN) {
 //? In JavaScript, the + sign is not only used for arithmetic addition but also for string concatenation. When the + operator is used with strings, it concatenates the strings together.
 //? It's important to note that if any operand of the + operator is a string, JavaScript will treat the other operands as strings as well, resulting in string concatenation. If both operands are numbers, the + operator performs numeric addition.
 
-const str = "Hello " + "World";
-console.log(str);
+const $str1 = "Hello " + "World";
+console.log($str1);
 
 //* Type coercion is the automatic conversion of "values" from one data type to another.
 //? It is a fundamental part of JavaScript and can be used to make code more readable and efficient.
@@ -175,8 +175,8 @@ var channelName = 'thapa tecnical'
 // Example:
 var x = 5;
 var y = 10;
-var sum = x + y;
-console.log(sum);
+var sum2 = x + y;
+console.log(sum2);
 
 //? Subtraction (-): Subtracts the right operand from the left operand.
 // Example:
@@ -214,7 +214,7 @@ console.log(remainder);
 
 var str1 = "Hello";
 var str2 = "World ";
-var str3 = str1 + Str2;
+var str3 = str1 + str2;
 console.log(str3);
 
 //* ===================================
@@ -556,12 +556,12 @@ for (var num = 1; num <= 10; num++) {
 //! practice :
 //! Calculate the sum of numbers from 1 to 10 using a for loop 🧑‍💻
 
-var sum = 0;
+var sum3 = 0;
 //debugger;
 for (var num = 1; num <= 10; num++) {
-  var sum = sum + num;
+  var sum3 = sum3 + num;
 }
-console.log(sum);
+console.log(sum3);
 
 //! Generating a Times Table:🧑‍💻
 //! Example 3: Generating a times table of 5 with a for loop.
@@ -637,13 +637,13 @@ for (var i = 1; i <= 5; i++) {
 
 // lets make a reusable code
 
-function sum(a, b) {
+function sum4(a, b) {
   return a + b;
 }
 
-console.log(sum(5, 5));
-console.log(sum(15, 50));
-console.log(sum(25, 750));
+console.log(sum4(5, 5));
+console.log(sum4(15, 50));
+console.log(sum4(25, 750));
 
 //* ===============================
 //* Function Declaration:
@@ -728,20 +728,20 @@ result4(10, 15);
 
 //! Example 1: Returning a Sum of two number
 
-function sum3(a, b) {
+function $sum3(a, b) {
     console.log(a + b);
   return a + b;
   console.log("hello I am function");
 }
 
-var result5 = sum3(5, 5);
+var result5 = $sum3(5, 5);
 console.log(result5);
 
 console.log("the sum of two number is " + result5);
 
-console.log(sum(5, 5));
-console.log(sum(15, 50));
-console.log(sum(25, 750));
+console.log($sum3(5, 5));
+console.log($sum3(15, 50));
+console.log($sum3(25, 750));
 
 //* ==============================
 //* IIFE - immediately invoked function expression
@@ -778,11 +778,11 @@ console.log("the sum of two number is " + result6);
 //? Arrays in JavaScript can be created using the Array constructor or with array literals (square brackets []).
 
 //? Using Array constructor
-let fruits = new Array('apple', 'orange', 'banana')
+let fruits1 = new Array('apple', 'orange', 'banana')
 
 //? Using array literal
-let fruits = ["apple", "orange", "banana"];
-console.log(fruits);
+let fruits2 = ["apple", "orange", "banana"];
+console.log(fruits1, fruits2);
 
 //? we can also create an empty array
 let arr = [];
@@ -792,48 +792,48 @@ console.log(typeof arr);
 //*  Accessing Elements:
 //* =====================================
 //?👉 Accessing Elements:  Array elements are accessed using zero-based indices.
-let fruits = ["apple", "orange", "banana"];
-console.log(fruits[3]);
-console.log(fruits["apple"]);
+let fruits3 = ["apple", "orange", "banana"];
+console.log(fruits3[3]);
+console.log(fruits3["apple"]);
 
 //* ======================================
 //*  Modifying Elements:
 //* =====================================
 //?👉  Modifying Elements: You can modify array elements by assigning new values to specific indices.
 
-let fruits = ["apple", "orange", "banana"];
-fruits[2] = "mango";
-console.log(fruits);
+let fruits4 = ["apple", "orange", "banana"];
+fruits4[2] = "mango";
+console.log(fruits4);
 
 //* =============================================
 //*  Array Traversal / Iterating Over Arrays
 //* ============================================
 //?👉 Array Traversal / Iterating Over Arrays
 
-let fruits = ["apple", "orange", "mango", "grapes", "banana"];
+let fruits5 = ["apple", "orange", "mango", "grapes", "banana"];
 
 //? 1: for of loop , also known as iterable
 //* for...of Loop: The for...of loop is used to iterate over the values of an iterable object, such as arrays, strings, or other iterable objects.
 
-for (let item of fruits) {
+for (let item of fruits5) {
   console.log(item);
 }
 
-for (let item = 0; item < fruits.length; item++) {
-  console.log(fruits[item]);
+for (let item = 0; item < fruits5.length; item++) {
+  console.log(fruits5[item]);
 }
 
 //? 2: for in loop
 //* for...in Loop: The for...in loop is used to iterate over the properties (including indices) of an object.
 
-for (let item in fruits) {
+for (let item in fruits5) {
   console.log(item);
 }
 
 // ? 3: forEach Method
 //* The arr.forEach() method calls the provided function once for each element of the array. The provided function may perform any kind of operation on the elements of the given array.
 
-const myForEachArr = fruits.forEach((curElem, index, arr) => {
+const myForEachArr = fruits5.forEach((curElem, index, arr) => {
   return `${curElem} ${index}`;
     console.log(arr);
 });
@@ -842,37 +842,37 @@ console.log(myForEachArr);
 // ? 4: map function
 //* map() creates a new array from calling a function for every array element. map() does not change the original array.
 
-const myMapArr = fruits.map((curElem, index, arr) => {
+const myMapArr = fruits5.map((curElem, index, arr) => {
   return ` my fav fruit is ${curElem} `;
     console.log(arr);
 });
 
 console.log(myMapArr);
-console.log(fruits);
+console.log(fruits5);
 
 //* ==========================================================================
 //*  How to Insert, Add, Replace and Delete Elements in Array(CRUD) - p1
 //* ==========================================================================
 
 //? 👉 How to Insert, Add, Replace and Delete Elements in Array(CRUD)
-let fruits = ["apple", "orange", "mango", "grapes", "banana"];
+let fruits6 = ["apple", "orange", "mango", "grapes", "banana"];
 
 //? 1: push(): Method that adds one or more elements to the end of an array.
-console.log(fruits.push("guava"));
-console.log(fruits);
+console.log(fruits6.push("guava"));
+console.log(fruits6);
 // The push() method returns the new length.
 
 //? 2: pop(): Method that removes the last element from an array.
-console.log(fruits.pop());
-console.log(fruits);
+console.log(fruits6.pop());
+console.log(fruits6);
 
 //? 3: unshift(): Method that adds one or more elements to the beginning of an array.
-console.log(fruits.unshift("guava"));
-console.log(fruits);
+console.log(fruits6.unshift("guava"));
+console.log(fruits6);
 
 //? 4: shift(): Method that removes the first element from an array.
-console.log(fruits.shift());
-console.log(fruits);
+console.log(fruits6.shift());
+console.log(fruits6);
 
 //* ==========================================================================
 //*  what if, we want to add or remove anywhere in an elements - p2
@@ -882,14 +882,14 @@ console.log(fruits);
 
 //* syntax
 //? splice(start, deleteCount, item1, item2, /* …, */ itemN)
-let fruits = ["apple", "orange", "banana", "mango"];
-fruits.splice(1, 1, "grapes");
-console.log(fruits);
+let fruits7 = ["apple", "orange", "banana", "mango"];
+fruits7.splice(1, 1, "grapes");
+console.log(fruits7);
 
 // //! what if you want to add the element at the end
-fruits.splice(-1, 0, "grapes");
-fruits.splice(1, 0, "grapes");
-console.log(fruits);
+fruits7.splice(-1, 0, "grapes");
+fruits7.splice(1, 0, "grapes");
+console.log(fruits7);
 
 //* =========================================
 //*  Searching in an Array
@@ -897,75 +897,75 @@ console.log(fruits);
 //?👉  Searching and Filter in an Array
 
 //? For Search we have - indexOf, lastIndexOf & includes
-const numbers = [1, 2, 3, 4, 6, 5, 6, 7, 8, 9];
+var $numbers1 = [1, 2, 3, 4, 6, 5, 6, 7, 8, 9];
 
 //?1: indexOf Method: The indexOf method returns the first index at which a given element can be found in the array, or -1 if it is not present.
 // syntax
-indexOf(searchElement);
-indexOf(searchElement, fromIndex);
-console.log(numbers.indexOf(4, 5));
+// indexOf(searchElement);
+// indexOf(searchElement, fromIndex);
+console.log($numbers1.indexOf(4, 5));
 
 //? 2: lastIndexOf Method: The lastIndexOf() method of Array instances returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at fromIndex.
-const numbers = [1, 2, 3, 6, 4, 5, 6, 7, 8, 9];
-const result = numbers.indexOf(6);
-console.log(result);
-const result1 = numbers.lastIndexOf(6);
-console.log(result1);
-const result = numbers.indexOf(6, 5);
-console.log(result);
+const $numbers12 = [1, 2, 3, 6, 4, 5, 6, 7, 8, 9];
+const result10 = $numbers12.indexOf(6);
+console.log(result10);
+const result20 = $numbers12.lastIndexOf(6);
+console.log(result20);
+const result30 = $numbers12.indexOf(6, 5);
+console.log(result30);
 
 //? 3: The includes method checks whether an array includes a certain element, returning true or false.
 // Syntax
-includes(searchElement);
-includes(searchElement, fromIndex);
+// includes(searchElement);
+// includes(searchElement, fromIndex);
 
-const numbers = [1, 2, 3, 6, 4, 5, 6, 7, 8, 9];
-const result = numbers.includes(5);
-console.log(result);
+var numbers2 = [1, 2, 3, 6, 4, 5, 6, 7, 8, 9];
+const result40 = numbers2.includes(5);
+console.log(result40);
 
 //* =========================================
 //*  Filter in an Array
 //* =========================================
 //? Search +  Filter
-const numbers = [1, 2, 3, 4, 5, 4, 6, 7, 8, 6, 9];
+var numbers3 = [1, 2, 3, 4, 5, 4, 6, 7, 8, 6, 9];
 
 //? 1: find Method: The find method is used to find the first element in an array that satisfies a provided testing function. It returns the first matching element or undefined if no element is found.
 
-const result = numbers.find((curElem) => {
+const result50 = numbers3.find((curElem) => {
   return curElem > 6;
 });
 
-console.log(result);
+console.log(result50);
 
 //? 2: findIndex Method: The findIndex() method of TypedArray instances returns the index of the first element in a typed array that satisfies the provided testing function. If no elements satisfy the testing function, -1 is returned.
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const numbers4 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-const result = numbers.map((curElem) => curElem * 5);
-console.log(result);
-const result2 = result.findIndex((curElem) => {
+const result60 = numbers4.map((curElem) => curElem * 5);
+console.log(result60);
+const result70 = result60.findIndex((curElem) => {
   return curElem > 15;
 });
-console.log(result2);
+console.log(result70);
 
 //* 3:  filter Method: The filter method creates a new array with all elements that pass the test implemented by the provided function.
 // syntax:
 //? filter(callbackFn)
 //? filter(callbackFn, thisArg)
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const numbers5 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-const result = numbers.filter((curElem) => {
+const result80 = numbers5.filter((curElem) => {
   return curElem > 4;
 });
 
-console.log(result);
+console.log(result80);
 
 // UseCase: In E-commerce website when we want to Remove or delete any product from addToCart page.
 //! Ex. le'ts say user wants to delete value 6.
 let value = 6;
-const numbers = [1, 2, 3, 4, 6, 5, 6, 7, 8, 9];
+const numbers6 = [1, 2, 3, 4, 6, 5, 6, 7, 8, 9];
 
-let updatedCart = numbers.filter((curElem) => {
+let updatedCart = numbers6.filter((curElem) => {
   return curElem !== value;
 });
 
@@ -988,14 +988,14 @@ const filterProducts = products.filter((curElem) => {
 console.log(filterProducts);
 
 // //! Filter unique values
-const numbers = [1, 2, 3, 4, 6, 5, 6, 7, 8, 9];
-let uniqueValues = numbers.filter((curElem, index, arr) => {
+const numbers8 = [1, 2, 3, 4, 6, 5, 6, 7, 8, 9];
+let uniqueValues = numbers8.filter((curElem, index, arr) => {
     console.log(index);
     console.log(arr.indexOf(curElem));
   return arr.indexOf(curElem) === index;
 });
 console.log(uniqueValues);
-console.log([...new Set(numbers)]);
+console.log([...new Set(numbers8)]);
 
 //* =========================================
 //*  How to Sort and Compare an Array
@@ -1004,9 +1004,9 @@ console.log([...new Set(numbers)]);
 //? Sorting an Array: The sort method sorts the elements of an array in place and returns the sorted array. By default, it sorts elements as strings.
 
 const fruits = ["Banana", "Apple", "Orange", "Mango"];
-const numbers = [1, 2, 4, 3, 6, 5, 6, 7, 4, 8, 9];
+const numbers7 = [1, 2, 4, 3, 6, 5, 6, 7, 4, 8, 9];
 
-console.log(numbers);
+console.log(numbers7);
 
 // ? compare callback function
 // syntax
@@ -1014,15 +1014,15 @@ console.log(numbers);
 // if(a>b) return 1  => switch the order
 //  if(b>a) return -1  => keep the order
 
-numbers.sort((a, b) => {
+numbers7.sort((a, b) => {
   if (a > b) return -1;
   if (b > a) return 1;
 });
 
-console.log(numbers);
+console.log(numbers7);
 
 //? For ascending order
-// const sortedNumbers = numbers.sort((a, b) => {
+const sortedNumbers = numbers7.sort((a, b) => {
   if (a > b) {
     return 1;
   } else if (b > a) {
@@ -1031,7 +1031,7 @@ console.log(numbers);
 });
 
 //? For descending order
-// const sortedNumbers = numbers.sort((a, b) => {
+const sortedNumbers2 = numbers7.sort((a, b) => {
   if (a > b) {
     return -1;
   } else if (b > a) {
@@ -1048,36 +1048,36 @@ console.log(numbers);
 // map() does not change the original array.
 
 // Original array of numbers
-const numbers = [1, 2, 3, 4, 5];
+const numbers9 = [1, 2, 3, 4, 5];
 
 //! Using map to square each number and create a new array
 // const numbers = [1, 2, 3, 4, 5];
 
-let result = numbers.map((curElem) => curElem * curElem);
-console.log(result);
+let result90 = numbers9.map((curElem) => curElem * curElem);
+console.log(result90);
 
 //! 1: Using the map method, write a function that takes an array of strings and returns a new array where each string is capitalized.
 // Original array of strings
 const words = ["APPLE", "banana", "cherry", "date"];
 
-const result = words.map((curElem) => {
+const result100 = words.map((curElem) => {
   return curElem.toLowerCase();
 });
 
-console.log(result);
+console.log(result100);
 
 //! 2: Using the map method, write a function that takes an array of numbers and returns a new array where each number is squared, but only if it's an even number.
 
 // Original array of numbers
 const numbers = [1, 2, 3, 4, 5];
 
-const result = numbers.map((curElem) => {
+const result110 = numbers.map((curElem) => {
     if (curElem % 2 === 0) {
       return curElem * curElem;
     }
   }).filter((curElem) => curElem !== undefined);
 
-console.log(result);
+console.log(result110);
 
 const evenSquare = numbers.map((curNum) => (curNum % 2 === 0 ? curNum * curNum : undefined)).filter((curElem) => curElem !== undefined);
 
@@ -1125,8 +1125,8 @@ console.log(totalPrice);
 //* String Properties:
 //? length: Property that returns the length of the string (number of characters).
 
-const str = "Hello,    World!";
-console.log(str.length);
+const $str = "Hello,    World!";
+console.log($str.length);
 // including space n all
 
 //* =========================================
@@ -1141,10 +1141,10 @@ console.log(str.length);
 // \\	    \	        Backslash
 
 // let text = "My name is " Thapa Technical " & I am a Full Stack Developer. ";
-let text ="My name is ' Thapa Technical ' & \\ I am a \"Full Stack \" Developer. ";
+let $text ="My name is ' Thapa Technical ' & \\ I am a \"Full Stack \" Developer. ";
 // // let text = 'My name is " Thapa Technical " & I am a Full Stack Developer. ';
 
-console.log(text);
+console.log($text);
 
 //* =========================================
 //* String Search Methods
@@ -1153,36 +1153,36 @@ console.log(text);
 //? 2: String Search Methods
 //? a:  indexOf(): The indexOf() method returns the index (position) of the first occurrence of a string in a string, or it returns -1 if the string is not found:
 // syntax
-indexOf(searchString)
-indexOf(searchString, position)
+// indexOf(searchString)
+// indexOf(searchString, position)
 
-let text = "Vinod Thapa";
-console.log(text.indexOf("thapa"));
+let $text1 = "Vinod Thapa";
+console.log($text1.indexOf("thapa"));
 // The indexOf() method is case sensitive.
-console.log(text.indexOf("Thapa"));
+console.log($text1.indexOf("Thapa"));
 
-let strArr = Array.from(text);
-console.log(strArr);
-let strMap = strArr.map((curElem, index) => `${curElem} - ${index}`);
+let $strArr = Array.from($text1);
+console.log($strArr);
+let strMap = $strArr.map((curElem, index) => `${curElem} - ${index}`);
 console.log(strMap);
 
 //? b: lastIndexOf() : The lastIndexOf() method returns the index of the last occurrence of a specified text in a string:
 // syntax
-lastIndexOf(searchString)
-lastIndexOf(searchString, position)
+// lastIndexOf(searchString)
+// lastIndexOf(searchString, position)
 
-let text = "Hello JavaScript, welcome to our world best JavaScript course";
-let index = text.indexOf("JavaScript");
-let index = text.lastIndexOf("JavaScript");
-let index = text.lastIndexOf("JavaScript", 40);
-console.log(index);
+let $text3 = "Hello JavaScript, welcome to our world best JavaScript course";
+let index = $text3.indexOf("JavaScript");
+let index2 = $text3.lastIndexOf("JavaScript");
+let index3 = $text3.lastIndexOf("JavaScript", 40);
+console.log(index, index2, index3);
 
 //? c:  search(): The search() method searches a string for a string (or a regular expression) and returns the position of the match.
 //* Returns the index number where the first match is found. Returns -1 if no match is found.
 
-let text = "Hello JavaScript, welcome to our world best JavaScript course";
-let result = text.search(/Javascript/i);
-console.log(result);
+let $text5 = "Hello JavaScript, welcome to our world best JavaScript course";
+let result120 = $text5.search(/Javascript/i);
+console.log(result120);
 
 //*👉 Important Tips
 // The search() method cannot take a second start position argument.
@@ -1191,18 +1191,18 @@ console.log(result);
 
 //? match() : Returns an array of the matched values or null if no match is found.
 
-let text = "Hello JavaScript, welcome to our world best JavaScript course";
-let result = text.match("Javascript");
-let result = text.match("JavaScript");
-todo here the js converts the normal text into regular expression text.match(/JavaScript/); without the g flag
-let result = text.match(/Javascript/gi);
+let $text6 = "Hello JavaScript, welcome to our world best JavaScript course";
+let result130 =$text6.match("Javascript");
+result130 = $text6.match("JavaScript");
+// todo here the js converts the normal text into regular expression text.match(/JavaScript/); without the g flag
+result130 = $text6.match(/Javascript/gi);
 
 console.log(result);
 
 //? matchAll() : Returns an iterator of all matches, providing detailed information about each match. Returns an empty iterator if no match is found.
-let text = "Hello JavaScript, welcome to our world best JavaScript course";
-let matchResult = text.matchAll("javascript");
-let matchResult = text.matchAll("JavaScript");
+let $text7 = "Hello JavaScript, welcome to our world best JavaScript course";
+let matchResult = $text7.matchAll("javascript");
+matchResult = $text7.matchAll("JavaScript");
 //todo  here the js converts the normal text into regular expression text.match(/JavaScript/g); also adds the g flag at the end
 
 console.log(...matchResult);
@@ -1220,30 +1220,30 @@ for (let { index } of matchResult) {
 }
 
 //? includes(): Returns true if the string contains the specified value, and false otherwise.
-let text = "Hello JavaScript, welcome to our world best JavaScript course";
-let includeResult = text.includes(/java/i);
-let includeResult = text.includes("J");
+let $text14 = "Hello JavaScript, welcome to our world best JavaScript course";
+// let includeResult = $text14.includes(/java/i);
+let includeResult = $text14.includes("J");
 console.log(includeResult);
 
 // Note: includes() is case sensitive. includes() is an ES6 feature.
 
 //? startsWith(): The startsWith() method returns true if a string begins with a specified value.Otherwise it returns false:
-let text = "Hello JavaScript, welcome to our world best JavaScript course";
-let result = text.startsWith("Helcome");
-let result = text.startsWith("Hello");
-console.log(result);
+let $text15 = "Hello JavaScript, welcome to our world best JavaScript course";
+let result140 = $text15.startsWith("Helcome");
+ result140 = $text15.startsWith("Hello");
+console.log(result140);
 
 //* start position for the search can be specified
-let result = text.startsWith("welcome", 18);
-let result = text.startsWith("welcome", 17);
-console.log(result);
+let result150 = $text15.startsWith("welcome", 18);
+result150 = $text15.startsWith("welcome", 17);
+console.log(result150);
 
 //? endsWith(): The endsWith() method returns true if a string ends with a specified value. Otherwise it returns false:
 
 let text = "Hello JavaScript, welcome to our world best JavaScript course";
-let result = text.endsWith("welcome");
-let result = text.endsWith("course");
-console.log(result);
+let result160 = text.endsWith("welcome");
+result160 = text.endsWith("course");
+console.log(result160);
 
 //* =========================================
 //* Extracting String Parts:
@@ -1259,10 +1259,10 @@ console.log(result);
 // Todo  JavaScript counts positions from zero.
 //? First position is 0. Second position is 1.
 
-let text = "Hello JavaScript, welcome to our world best JavaScript course";
-let result = text.slice(6);
-let result = text.slice(6, 15);
-console.log(result);
+let $text13 = "Hello JavaScript, welcome to our world best JavaScript course";
+let result170 = $text13.slice(6);
+ result170 = $text13.slice(6, 15);
+console.log(result170);
 
 // subString() substring()
 
@@ -1274,16 +1274,16 @@ console.log(result);
 
 //* substring() is similar to slice(). The difference is that start and end values less than 0 are treated as 0 in substring().
 
-let text = "Hello JavaScript, welcome to our world best JavaScript course";
-let result = text.slice(-6);
-console.log(result);
+let $text11 = "Hello JavaScript, welcome to our world best JavaScript course";
+let result180 = $text11.slice(-6);
+console.log(result180);
 
 //! Homework
-let text = "Hello JavaScript, welcome to our world best JavaScript course";
-let result = text.substring(0);
-let result = text.substring(1);
-let result = text.substring(-5);
-console.log(result);
+let $text12 = "Hello JavaScript, welcome to our world best JavaScript course";
+let $result10 = $text12.substring(0);
+$result10 = $text12.substring(1);
+$result10 = $text12.substring(-5);
+console.log($result10);
 
 //! similarities
 //todo  In both the slice() and substring() methods, the end parameter indicates the ending index up to which the extraction occurs, but the character at the end index is excluded from the extracted substring.
@@ -1299,21 +1299,21 @@ console.log(result);
 //? The at(position) Method
 
 //? charAT() : The charAt() method returns the character at a specified index (position) in a string
-let text = "Hello JavaScript, welcome to our world best JavaScript course";
-let result = text.charAt(6);
-let result = text.charAt(-6);
-console.log(result);
+let $text4 = "Hello JavaScript, welcome to our world best JavaScript course";
+let $result20 = $text4.charAt(6);
+$result20 = $text4.charAt(-6);
+console.log($result20);
 
 //? charCodeAt() : The charCodeAt() method returns the code of the character at a specified index in a string. The method returns a UTF-16 code (an integer between 0 and 65535).
-let text = "Hello JavaScript, welcome to our world best JavaScript course";
-let result = text.charCodeAt(6);
-console.log(result);
+let $text9 = "Hello JavaScript, welcome to our world best JavaScript course";
+let $result30 = $text9.charCodeAt(6);
+console.log($result30);
 
 //todo ES2022 introduced the string method at():
 //? The at() method returns the character at a specified index (position) in a string. The at() method returns the same as carAt().
-let text = "Hello JavaScript, welcome to our world best JavaScript course";
-let result = text.at(-6);
-console.log(result);
+let $text10 = "Hello JavaScript, welcome to our world best JavaScript course";
+let $result40 = $text10.at(-6);
+console.log($result40);
 
 //todo Note
 // The at() method is a new addition to JavaScript.
@@ -1340,21 +1340,21 @@ console.log(replacedString);
 
 //! Other Useful Methods:
 //? toUpperCase and toLowerCase: Converts the string to uppercase or lowercase.
-const str = "JavaScript";
-console.log(str.toUpperCase()); // Outputs: JAVASCRIPT
-console.log(str.toLowerCase()); // Outputs: javascript
+const $str6 = "JavaScript";
+console.log($str6.toUpperCase()); // Outputs: JAVASCRIPT
+console.log($str6.toLowerCase()); // Outputs: javascript
 
 //? trim: Removes whitespace from both ends of the string.
-const str = "   Hello, World!   ";
-console.log(str.length);
+const $str5 = "   Hello, World!   ";
+console.log($str5.length);
 
-let trimStr = str.trim();
+let trimStr = $str5.trim();
 console.log(trimStr);
 console.log(trimStr.length);
 
 //? split: Splits the string into an array of substrings based on a specified delimiter.
-const str = "apple,orange,banana";
-let strArr = str.split(",").reverse().join();
+const $str4 = "apple,orange,banana";
+let strArr = $str4.split(",").reverse().join();
 console.log(strArr);
 
 //* =========================================
@@ -1388,12 +1388,12 @@ const ceilValue = Math.ceil(3.7);
 console.log(ceilValue);
 
 //? Math.floor(x): Returns the value of x rounded down to its nearest integer.
-const floorValue = Math.floor(3.7);
-console.log(floorValue);
+const floorValue2 = Math.floor(3.7);
+console.log(floorValue2);
 
 //? Math.trunc(x): Returns the integer part of x:
-const truncValue = Math.trunc(3.7);
-console.log(truncValue);
+const truncValue2 = Math.trunc(3.7);
+console.log(truncValue2);
 
 //todo Math.trunc() and Math.sign() were added to JavaScript 2015 - ES6.
 const truncValue = Math.trunc(-3.7);
@@ -1421,12 +1421,12 @@ console.log(squareRoot);
 
 //? Math.log(x) returns the natural logarithm of x.
 let logResult = Math.log(1);
-let logResult = Math.log(2);
+logResult = Math.log(2);
 console.log(logResult);
 
 //? Math.log2(x) returns the base 2 logarithm of x.
-let logResult = Math.log2(8);
-console.log(logResult);
+let logResult2 = Math.log2(8);
+console.log(logResult2);
 
 //* =========================================
 //* Interview Question
@@ -1510,14 +1510,14 @@ console.log(dateFromMilliseconds);
 //* ===================================================
 
 // You can get various components of a date using the methods of the Date object:
-const currentDate = new Date();
+const currentDate2 = new Date();
 // //? In a date object, the time is static.
-const year = currentDate.getFullYear();
-const month = currentDate.getMonth(); // 0-based index
-const date = currentDate.getDate();
-const day = currentDate.getDay();
-console.log(currentDate);
-console.log(day);
+const $year = currentDate2.getFullYear();
+const $month = currentDate2.getMonth(); // 0-based index
+const $date4 = currentDate2.getDate();
+const $day = currentDate2.getDay();
+console.log(currentDate2);
+console.log($day);
 // In JavaScript, the first day of the week (day 0) is Sunday.
 // day of the week (0 for Sunday, 1 for Monday, ..., 6 for Saturday)
 
@@ -1525,21 +1525,21 @@ console.log(day);
 //* JavaScript Set Date Methods / Setting Components:
 //* ===================================================
 
-const date = new Date();
+const $date3 = new Date();
 
 //? setFullYear(yearValue[, monthValue[, dayValue]]): Sets the full year for a specified date according to local time.
-console.log(date);
+console.log($date3);
 
-date.setFullYear(2025);
-console.log(date); // Date object with the year set to 2025
+$date3.setFullYear(2025);
+console.log($date3); // Date object with the year set to 2025
 
 //? setMonth(monthValue[, dayValue]): Sets the month for a specified date according to local time.
-date.setMonth(5); // June (months are zero-based)
-console.log(date); // Date object with the month set to June
+$date3.setMonth(5); // June (months are zero-based)
+console.log($date3); // Date object with the month set to June
 
 //? setDate(dayValue): Sets the day of the month for a specified date according to local time.
-date.setDate(15);
-console.log(date); // Date object with the day of the month set to 15
+$date3.setDate(15);
+console.log($date3); // Date object with the day of the month set to 15
 
 //* ==================================================
 //* JavaScript Get Time Methods / Getting Components:
@@ -1556,30 +1556,30 @@ console.log(time);
 //* JavaScript Set Time Methods / Getting Components:
 //* ===================================================
 
-// const date = new Date();
+const $date10 = new Date();
 
 //? setHours(hourValue[, minuteValue[, secondValue[, millisecondValue]]]): Sets the hours for a specified date according to local time.
-date.setHours(10);
-console.log(date); // Date object with the hours set to 10
+$date10.setHours(10);
+console.log($date10); // Date object with the hours set to 10
 
 //? setMinutes(minuteValue[, secondValue[, millisecondValue]]): Sets the minutes for a specified date according to local time.
-date.setMinutes(30);
-console.log(date); // Date object with the minutes set to 30
+$date10.setMinutes(30);
+console.log($date10); // Date object with the minutes set to 30
 
 //? setSeconds(secondValue[, millisecondValue]): Sets the seconds for a specified date according to local time.
-date.setSeconds(45);
-console.log(date); // Date object with the seconds set to 45
+$date10.setSeconds(45);
+console.log($date10); // Date object with the seconds set to 45
 
 //? setMilliseconds(millisecondValue): Sets the milliseconds for a specified date according to local time.
-const date = new Date();
+var date = new Date();
 
 date.setMilliseconds(500);
 console.log(date); // Date object with the milliseconds set to 500
 
 //? setTime(timeValue): Sets the Date object to the time represented by a number of milliseconds since January 1, 1970, 00:00:00 UTC.
-const date = new Date();
-date.setTime(1832090690883);
-console.log(date); // Date object representing the specified time
+const $date2 = new Date();
+$date2.setTime(1832090690883);
+console.log($date2); // Date object representing the specified time
 
 //* ================================================================
 //* A few useful methods of the Date object in JavaScript
@@ -1626,13 +1626,13 @@ console.log(newDate.getTime());
 //? The localStorage object allows you to save key/value pairs in the browser.
 
 // How to add the data from localStorage
-localStorage.setItem("youtubeJsCourse", "addingData");
+// localStorage.setItem("youtubeJsCourse", "addingData");
 
 // How to get the data from localStorage
-localStorage.getItem("youtubeJsCourse");
+// localStorage.getItem("youtubeJsCourse");
 
 // How to remove the data from localStorage
-localStorage.removeItem("youtubeJsCourse");
+// localStorage.removeItem("youtubeJsCourse");
 
 //todo Local Storage can only store strings, so when you want to store a complex data structure like an array or an object, you need to convert it to a string using JSON.stringify:
 
@@ -1646,7 +1646,7 @@ console.log(jsonString);
 //* JSON.parse: Converts a JSON string into a JavaScript object.
 // Useful when you receive JSON data from a server or read it from a file, and you want to work with it as a JavaScript object.
 
-const jsonString = '{"name":"Vinod","age":30,"city":"pune"}';
-const parsedData = JSON.parse(jsonString);
+const jsonString2 = '{"name":"Vinod","age":30,"city":"pune"}';
+const parsedData = JSON.parse(jsonString2);
 console.log(parsedData);
 // Output: { name: 'Vinod', age: 30, city: 'pune' }
