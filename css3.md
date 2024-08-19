@@ -1,3 +1,96 @@
+# CSS3 Cheatsheet
+
+### Selectors
+- Universal Selector: *
+- Element Selector: element
+- Class Selector: .class
+- ID Selector: #id
+- Attribute Selector: [attribute] or [attribute=value]
+- Pseudo-classes: :hover, :focus, :nth-child(n), :last-child, :first-child, :nth-of-type(n), etc.
+- Pseudo-elements: ::before, ::after, ::first-line, ::first-letter
+
+### Box Model
+- width: Sets the width of an element.
+- height: Sets the height of an element.
+- padding: Sets the space between the element's border and its content.
+- border: Sets the border around an element.
+- margin: Sets the space outside the element's border.
+- Display and Positioning
+- display: block, inline, inline-block, flex, grid, none
+- position: static, relative, absolute, fixed, sticky
+- top, right, bottom, left: Positioning properties.
+- z-index: Controls the stacking order of elements.
+
+### Flexbox
+- display: flex: Enables flexbox on the container.
+- flex-direction: row, column, row-reverse, column-reverse
+- justify-content: flex-start, center, space-between, space-around, space-evenly
+- align-items: flex-start, center, flex-end, baseline, stretch
+- align-self: auto, flex-start, center, flex-end, baseline, stretch
+- flex-wrap: nowrap, wrap, wrap-reverse
+- flex: flex-grow, flex-shrink, flex-basis
+
+### Grid Layout
+- display: grid: Enables grid layout on the container.
+- grid-template-columns: Defines the number and size of columns.
+- grid-template-rows: Defines the number and size of rows.
+- grid-column: Specifies the column span.
+- grid-row: Specifies the row span.
+- grid-gap: Defines the space between grid items.
+
+### Typography
+- font-family: Defines the font.
+- font-size: Sets the font size.
+- font-weight: normal, bold, bolder, lighter, or numeric values.
+- font-style: normal, italic, oblique
+- line-height: Sets the distance between lines of text.
+- text-align: left, right, center, justify
+- text-transform: uppercase, lowercase, capitalize, none
+- letter-spacing: Adjusts spacing between characters.
+- word-spacing: Adjusts spacing between words.
+
+### Colors and Backgrounds
+- color: Sets the text color.
+- background-color: Sets the background color.
+- background-image: Sets a background image.
+- background-size: auto, cover, contain
+- background-position: left, right, top, bottom, center, or specific values.
+- background-repeat: repeat, repeat-x, repeat-y, no-repeat
+
+### Borders and Outlines
+- border: border-width, border-style, border-color
+- border-radius: Rounds the corners of an element.
+- outline: Similar to border but doesn’t affect layout. outline-width, outline-style, outline-color
+
+### Transitions and Animations
+- transition: transition-property, transition-duration, transition-timing-function, transition-delay
+- animation: animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode
+
+### Transforms
+- transform: rotate(), scale(), translate(), skew()
+- transform-origin: Defines the point of origin for transformations.
+
+### Opacity and Visibility
+- opacity: Sets the transparency level of an element.
+- visibility: visible, hidden, collapse
+
+### Media Queries
+- @media: Defines different styles for different devices or screen sizes. Example:
+```
+@media (max-width: 600px) {
+  /* Styles for screens smaller than 600px */
+}
+```
+
+### Custom Properties (CSS Variables)
+- --variable-name: Define a custom property.
+- var(--variable-name): Use the custom property value.
+
+### Gradients
+- background: linear-gradient(direction, color1, color2, ...): Creates a linear gradient background.
+- background: radial-gradient(shape size at position, color1, color2, ...): Creates a radial gradient background.
+
+
 # 1. Color and Background Properties
 
 background: A shorthand property for setting multiple background properties.
