@@ -37,7 +37,7 @@ For example:
 
 Here's an example of how to use the JavaScript cheatsheet:
 
-```markdown
+markdown
 # JavaScript Cheatsheet
 
 ## Variables
@@ -46,7 +46,11 @@ Here's an example of how to use the JavaScript cheatsheet:
 - `var`: Function-scoped variable.
 
 ## Functions
-```javascript
+javascript
+```
 function greet(name) {
     return "Hello, " + name;
 }
+```
+
+- 📫 How to reach me **hanshal18@hotmail.com**
